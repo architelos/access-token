@@ -34,6 +34,7 @@ function generateRequestURL() {
 async function request(url) {
     return await axios.post(url).then(res => {return res})
 }
+
 module.exports = function accessToken(callback) {
   var url = generateRequestURL()
   var response = request(url)
