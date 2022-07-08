@@ -1,7 +1,6 @@
 const md5 = require('md5')
 const axios = require('axios').default
 const parser = require("xml-parse");
-const access = require('../commands/access');
 
 function generateDeviceKey(length) {
     var result = ''
